@@ -5,4 +5,7 @@ from django.http import HttpResponse
 
 
 def about_us(request):
-    return HttpResponse("Hello, World!")
+    return render(
+        request,
+        "about/about.html",
+    )
