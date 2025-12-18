@@ -3,13 +3,13 @@
 
 /* CSS Variables */
 :root {
-    --primary-font: "Lato", sans-serif;
-    --heading-font: "Imperial Script", cursive;
-    --primary-color: #99ceff; 
-    --primary-alt-color: #bde0fe;
-    --secondary-color: #ffafcc;
-    --secondary-alt-color: #ffc8dd;
-    --alt-color: #cdb4db;
+  --primary-font: "Lato", sans-serif;
+  --heading-font: "Imperial Script", cursive;
+  --primary-color: #99ceff;
+  --primary-alt-color: #bde0fe;
+  --secondary-color: #ffafcc;
+  --secondary-alt-color: #ffc8dd;
+  --alt-color: #cdb4db;
 }
 
 body {
@@ -23,7 +23,7 @@ h2 {
 
 nav,
 footer {
-    background-color: var(--primary-alt-color);
+  background-color: var(--primary-alt-color);
 }
 
 nav {
@@ -41,18 +41,30 @@ footer {
 .btn-signup:hover {
   background-color: none;
   border: 1px solid var(--secondary-color);
-  
+
 }
 
 #social-icons i {
-  width: 40px;
-  height: 40px;
+  width: 2.5rem;
+  height: 2.5rem;
   border-radius: 50%;
-  background: #007bff;   /* circle color */
-  color: white;          /* icon color */
+  background: var(--secondary-color);
+  color: black;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   font-size: 1.5rem;
-  margin: 0rem 0.5rem;
+  margin: 0rem 0.4rem;
+}
+
+
+/* Media Queries*/
+
+/* X-small screen sizes - up to 380px*/
+@media screen and (max-width: 380px) {
+
+  footer address,
+  footer p {
+    font-size: 0.9rem;
+  }
 }
