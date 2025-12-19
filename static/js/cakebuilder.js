@@ -1,4 +1,35 @@
+let order = {
+    shape: "",
+    size: "",
+    tier: "",
+    sponge: "",
+    icing: "",
+    message: "",
+    theme: "",
+    colours: "",
+    quote: 0,
+    status: "",
+}
+
 $(document).ready(function () {
+
+    $('button[data-shape]').on('click', function () {
+        const shape = $(this).data('shape');
+        if (shape === 'square') {
+            $('button[data-size="1"]').text('30 x 30cm');
+            $('button[data-size="2"]').text('50 x 50cm');
+        } else if (shape === 'rectangle') {
+            $('button[data-size="1"]').text('50 x 30cm');
+            $('button[data-size="2"]').text('60 x 45cm');
+        } else {
+            $('button[data-size="1"]').text('30cm');
+            $('button[data-size="2"]').text('50cm');
+        }
+
+    });
+
+
+
     $("#delivery-date").flatpickr({
         minDate: "today",
         dateFormat: "Y-m-d", // matches Django DateField

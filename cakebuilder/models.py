@@ -2,8 +2,8 @@ from django.db import models
 from django.contrib.auth.models import User
 
 SHAPE = ((1, "Square"), (2, "Rectangle"), (3, "Round"))
-SIZE = ((1, "30 x 30cm"), (2, "50 x 50cm"), (3, "30 x 50cm"),
-        (4, "45 x 60cm"), (5, "30cm"), (6, "50cm"))
+SIZE = ((1, "30 x 30cm"), (2, "50 x 50cm"), (3, "50 x 30cm"),
+        (4, "60 x 45cm"), (5, "30cm"), (6, "50cm"))
 TIER = ((1, 1), (2, 2), (3, 3))
 SPONGE = ((1, "Vanilla"), (2, "Chocolate"),
           (3, "Coffee"), (4, "Carrot"), (5, "Lemon"))
