@@ -4,12 +4,20 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_GET
 from datetime import datetime
 from .services import get_available_slots
+from .forms import OrderForm
 
 # Create your views here.
 
 
 def cakebuilder_app(request):
-    return render(request, 'cakebuilder/cakebuilder.html')
+    my_form = OrderForm()
+    return render(
+        request,
+        'cakebuilder/cakebuilder.html',
+        {
+            "my_form": my_form,
+        },
+        )
 
 
 @require_GET
