@@ -8,7 +8,7 @@ TIER = ((1, 1), (2, 2), (3, 3))
 SPONGE = ((1, "Vanilla"), (2, "Chocolate"),
           (3, "Coffee"), (4, "Carrot"), (5, "Lemon"))
 ICING = ((1, "Buttercream"), (2, "Ganache"),
-         (3, "Fondant"), (4, "Royal Icing"))
+         (3, "Fondant"), (4, "Royal Icing"), (5, "Cream Cheese"))
 STATUS = ((1, "Ordered"), (2, "Completed"), (3, "Cancelled"))
 
 
