@@ -9,145 +9,150 @@
     <div class="row">
         <div class="col-md-8 mt-3 offset-md-2">
             <h1>Welcome to our Cake Builder App</h1>
-              <button class="btn btn-signup" data-bs-target="#cakeModalDate" data-bs-toggle="modal">Let's get Started!</button>
+            <button class="btn btn-signup" data-bs-target="#cakeModalDate" data-bs-toggle="modal">Let's get
+                Started!</button>
         </div>
     </div>
 </div>
 
- <!-- Modal Date -->
-  <div class="modal animate__animated animate__slideInLeft" id="cakeModalDate" aria-hidden="true"
+<!-- Modal Date -->
+<div class="modal animate__animated animate__slideInLeft" id="cakeModalDate" aria-hidden="true"
     aria-labelledby="exampleModalToggleLabel" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Delivery Date</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          Calendar
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-signup" data-bs-target="#cakeModalStep1" data-bs-toggle="modal">Confirm</button>
-        </div>
-      </div>
-    </div>
-  </div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalToggleLabel">Delivery Date</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
 
-  <!-- Modal Step 1 -->
-  <div class="modal animate__animated animate__slideInLeft" id="cakeModalStep1" aria-hidden="true"
+            <div class="modal-body">
+                <label for="delivery-date" class="ms-2">Select a Date:</label>
+                <input type="text" id="delivery-date">
+                <div id="time-slots"></div>
+            </div>
+
+            <div class="modal-footer">
+                <button class="btn btn-signup" data-bs-target="#cakeModalStep1" data-bs-toggle="modal">Confirm</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal Step 1 -->
+<div class="modal animate__animated animate__slideInLeft" id="cakeModalStep1" aria-hidden="true"
     aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Step 1/6</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalToggleLabel2">Step 1/6</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                This is step 1
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-signup" data-bs-target="#cakeModalStep2" data-bs-toggle="modal">Next</button>
+            </div>
         </div>
-        <div class="modal-body">
-          This is step 1
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-signup" data-bs-target="#cakeModalStep2" data-bs-toggle="modal">Next</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Modal Step 2 -->
-  <div class="modal animate__animated animate__slideInLeft" id="cakeModalStep2" aria-hidden="true"
+<!-- Modal Step 2 -->
+<div class="modal animate__animated animate__slideInLeft" id="cakeModalStep2" aria-hidden="true"
     aria-labelledby="exampleModalToggleLabel3" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel3">Step 2/6</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalToggleLabel3">Step 2/6</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                This is step 2
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-signup" data-bs-target="#cakeModalStep3" data-bs-toggle="modal">Next</button>
+            </div>
         </div>
-        <div class="modal-body">
-          This is step 2
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-signup" data-bs-target="#cakeModalStep3" data-bs-toggle="modal">Next</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Modal Step 3 -->
-  <div class="modal animate__animated animate__slideInLeft" id="cakeModalStep3" aria-hidden="true"
+<!-- Modal Step 3 -->
+<div class="modal animate__animated animate__slideInLeft" id="cakeModalStep3" aria-hidden="true"
     aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel4">Step 3/6</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalToggleLabel4">Step 3/6</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                This is step 3
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-signup" data-bs-target="#cakeModalStep4" data-bs-toggle="modal">Next</button>
+            </div>
         </div>
-        <div class="modal-body">
-          This is step 3
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-signup" data-bs-target="#cakeModalStep4" data-bs-toggle="modal">Next</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Modal Step 4 -->
-  <div class="modal animate__animated animate__slideInLeft" id="cakeModalStep4" aria-hidden="true"
+<!-- Modal Step 4 -->
+<div class="modal animate__animated animate__slideInLeft" id="cakeModalStep4" aria-hidden="true"
     aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel4">Step 4/6</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalToggleLabel4">Step 4/6</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                This is step 4
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-signup" data-bs-target="#cakeModalStep5" data-bs-toggle="modal">Next</button>
+            </div>
         </div>
-        <div class="modal-body">
-          This is step 4
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-signup" data-bs-target="#cakeModalStep5" data-bs-toggle="modal">Next</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Modal Step 5 -->
-  <div class="modal animate__animated animate__slideInLeft" id="cakeModalStep5" aria-hidden="true"
+<!-- Modal Step 5 -->
+<div class="modal animate__animated animate__slideInLeft" id="cakeModalStep5" aria-hidden="true"
     aria-labelledby="exampleModalToggleLabel4" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel4">Step 5/6</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalToggleLabel4">Step 5/6</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                This is step 5
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-signup" data-bs-target="#cakeModalStep6" data-bs-toggle="modal">Next</button>
+            </div>
         </div>
-        <div class="modal-body">
-          This is step 5
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-signup" data-bs-target="#cakeModalStep6" data-bs-toggle="modal">Next</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  <!-- Modal Step 6 -->
-  <div class="modal animate__animated animate__slideInLeft" id="cakeModalStep6" aria-hidden="true"
+<!-- Modal Step 6 -->
+<div class="modal animate__animated animate__slideInLeft" id="cakeModalStep6" aria-hidden="true"
     aria-labelledby="exampleModalToggleLabel5" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalToggleLabel5">Step 6/6</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-3" id="exampleModalToggleLabel5">Step 6/6</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                This is step 6
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-signup" data-bs-toggle="modal">Next</button>
+            </div>
         </div>
-        <div class="modal-body">
-          This is step 6
-        </div>
-        <div class="modal-footer">
-          <button class="btn btn-signup" data-bs-toggle="modal">Next</button>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
 
-  
+
 
 
 

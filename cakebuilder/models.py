@@ -17,7 +17,8 @@ STATUS = ((1, "Ordered"), (2, "Completed"), (3, "Cancelled"))
 
 class Order(models.Model):
     """
-    Stores the complete order related to :model:`auth.User`.
+    Stores the complete cake order for the customer. 
+    Related to :model:`auth.User` and :model:`Delivery.pk`
     """
     customer = models.ForeignKey(
         User, on_delete=models.CASCADE, related_name="customer_orders"
@@ -37,3 +38,23 @@ class Order(models.Model):
 
     class Meta:
         ordering = ["-created_on"]
+
+
+class TimeSlot(models.TextChoices):
+    SLOT_11 = "11:00"
+    SLOT_13 = "13:00"
+    SLOT_15 = "15:00"
+    SLOT_17 = "17:00"
+
+
+class Booking(models.Model):
+    delivery_date = models.DateField()
+    time_slot = models.CharField(
+        max_length=5,
+        choices=TimeSlot.choices
+    )
+
+    created_at = models.DateTimeField(auto_now_add=True)
+
+    class Meta:
+        unique_together = ("delivery_date", "time_slot")
