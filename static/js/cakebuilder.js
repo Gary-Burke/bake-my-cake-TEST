@@ -74,6 +74,12 @@ $(document).ready(function () {
     })
 
 
+    $("button[data-icing]").on("click", function () {
+        order.icing = $(this).data("icing");
+        console.log(`Icing: ${order.icing}`); // TODO: Delete
+    })
+
+
     $("#delivery-date").flatpickr({
         minDate: new Date().fp_incr(7),
         dateFormat: "Y-m-d", // matches Django DateField
