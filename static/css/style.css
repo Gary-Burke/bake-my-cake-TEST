@@ -3,14 +3,12 @@
   --body-font: "Source Sans 3", sans-serif;
   --heading-font: "Playfair Display", serif;
 
-  --primary-color: #99ceff;
-  --primary-alt-color: #bde0fe;
-  --secondary-color: #ffafcc;
-  --secondary-alt-color: #ffc8dd;
-  --alt-color: #cdb4db;
+  --primary-color: #6D7A71;
+  --secondary-color: #D7CCB5;
+  --primary-text-color: #392929;
+  --secondary-text-color: #ffffff;
+
 }
-
-
 
 
 /* Cake Builder Page */
@@ -54,15 +52,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
 body {
   font-family: var(--body-font);
 }
@@ -72,24 +61,51 @@ h2 {
   font-family: var(--heading-font);
 }
 
-nav,
-footer {
-  background-color: var(--primary-alt-color);
+nav {
+  background-color: var(--primary-color);
 }
 
-nav {
-  box-shadow: 0 2px 4px #3a3a3a;
+.nav-link {
   font-family: var(--heading-font);
-  font-size: 1.25rem;
+  font-size: 20px;
+  color: var(--secondary-text-color);
+  position: relative;
 }
+
+.nav-link:hover {
+  color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link.active {
+  color: var(--secondary-color);
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0px;
+  width: 60%;
+  height: 2px;
+  background-color: var(--secondary-color);
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.navbar-nav .nav-item:hover .nav-link::after,
+.navbar-nav .nav-link.active::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+
+
+
 
 .logo {
   height: 40px;
 }
 
-footer {
-  box-shadow: 0 -2px 4px #3a3a3a;
-}
 
 .btn-signup {
   background-color: var(--secondary-color);
