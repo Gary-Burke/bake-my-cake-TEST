@@ -6,7 +6,7 @@
   --primary-color: #69776e;
   --secondary-color: #c9c1a6;
 
-  --alt-color: #b7d8f5;
+  --alt-color: #DEE2E6;
 
   --highlight-color: #FED8A6;
   --primary-text-color: #FFF9F5;
@@ -17,14 +17,14 @@
 
 /* Cake Builder Page */
 .selections {
-  border: 1px solid black;
+  border: 0.125rem solid var(--alt-color);
   border-radius: 0.75rem;
   margin-bottom: 1rem;
   cursor: pointer;
 }
 
 .selections:hover {
-  border: 1px solid blue;
+  border: 0.125rem solid var(--primary-color);
 }
 
 /* .selections p {
@@ -33,7 +33,7 @@
 
 .selections img {
   width: 150px;
-  height: 150px;
+  height: 67px;
   /* border: 1px solid red; */
   margin-top: 1rem;
 }
@@ -42,7 +42,7 @@
 @media screen and (min-width: 768px) {
   .selections img {
     width: 90px;
-    height: 90px;
+    height: 40px;
   }
 }
 
@@ -50,7 +50,7 @@
 @media screen and (min-width: 992px) {
   .selections img {
     width: 165px;
-    height: 165px;
+    height: 74px;
   }
 }
 
@@ -117,7 +117,7 @@ nav {
 
 
 .btn-signup {
-  background-color: var(--alt-color);
+  background-color: var(--secondary-color);
   border-radius: 0.8rem;
   border: 2px outset black;
 }
