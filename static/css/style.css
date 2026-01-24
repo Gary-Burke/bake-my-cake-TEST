@@ -15,6 +15,24 @@
 }
 
 
+#cake-form {
+  border: 2px solid var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+fieldset {
+  border: 1px solid var(--primary-color);
+  border-radius: 0.5rem;
+}
+
+legend {
+  float: none;
+  padding: 0px 0.25rem;
+  margin-bottom: -0.5rem;
+  width: fit-content;
+}
+
+
 /* Cake Builder Page */
 .selections {
   border: 0.125rem solid var(--alt-color);
@@ -33,7 +51,7 @@
 
 .selections img {
   width: 150px;
-  height: 67px;
+  
   /* border: 1px solid red; */
   margin-top: 1rem;
 }
@@ -42,7 +60,7 @@
 @media screen and (min-width: 768px) {
   .selections img {
     width: 90px;
-    height: 40px;
+    
   }
 }
 
@@ -50,7 +68,7 @@
 @media screen and (min-width: 992px) {
   .selections img {
     width: 165px;
-    height: 74px;
+    aspect-ratio: 1 / 0.68;
   }
 }
 

@@ -25,33 +25,29 @@
         <div class="modal-content text-center">
             <div class="modal-header mx-auto">
                 <h2 class="modal-title" id="cakeModalShapeToggleLabel">Choose your Shape</h2>
-
-                
             </div>
             <div class="modal-body">
                 <p>Step 1</p>
                 <div class="container">
-                <div class="row justify-content-evenly">
-
-                    <div class="col-10 col-sm-7 col-md-3 selections justify-content-center" data-bs-target="#cakeModalSize" data-bs-toggle="modal" data-shape="square">                        
-                            <img src="{% static 'images/square.webp' %}" alt="Shape of a square" >
-                            <p>Square</p>                        
-                    </div>
-
-                    <div class="col-10 col-sm-7 col-md-3 selections" data-bs-target="#cakeModalSize" data-bs-toggle="modal" data-shape="rectangle">
-                        <img src="{% static 'images/rectangle.webp' %}" alt="Shape of a rectangle">
-                        <p>Rectangle</p>
-                    </div>
-
-                    <div class="col-10 col-sm-7 col-md-3 selections" data-bs-target="#cakeModalSize" data-bs-toggle="modal" data-shape="round">
-                        <img src="{% static 'images/round.webp' %}" alt="Shape of cylinder">
-                        <p>Round</p>
+                    <div class="row justify-content-evenly">
+                        <div class="col-10 col-sm-7 col-md-3 selections justify-content-center"
+                            data-bs-target="#cakeModalSize" data-bs-toggle="modal" data-shape="square">
+                            <img src="{% static 'images/square.webp' %}" alt="Shape of a square">
+                            <p>Square</p>
+                        </div>
+                        <div class="col-10 col-sm-7 col-md-3 selections" data-bs-target="#cakeModalSize"
+                            data-bs-toggle="modal" data-shape="rectangle">
+                            <img src="{% static 'images/rectangle.webp' %}" alt="Shape of a rectangle">
+                            <p>Rectangle</p>
+                        </div>
+                        <div class="col-10 col-sm-7 col-md-3 selections" data-bs-target="#cakeModalSize"
+                            data-bs-toggle="modal" data-shape="round">
+                            <img src="{% static 'images/round.webp' %}" alt="Shape of cylinder">
+                            <p>Round</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            </div>
-
-            
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
             </div>
@@ -63,24 +59,35 @@
 <!-- Modal Step 2 Size -->
 <div class="modal animate__animated animate__slideInLeft" id="cakeModalSize" aria-hidden="true"
     aria-labelledby="cakeModalSizeToggleLabel" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 class="modal-title " id="cakeModalSizeToggleLabel">Choose your Size</h2>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    <div class="modal-dialog modal-lg modal-dialog-centered ">
+        <div class="modal-content text-center">
+            <div class="modal-header mx-auto">
+                <h2 class="modal-title" id="cakeModalSizeToggleLabel">Choose your Size</h2>
             </div>
             <div class="modal-body">
-                Step 2
-            </div>
-            <div class="container">
-                <div class="row row-cols-2 mb-3 justify-content-evenly">
-                    <button class="col-4 modal-btn" data-bs-target="#cakeModalTiers" data-bs-toggle="modal"
-                        data-size="small"></button>
-                    <button class="col-4 modal-btn" data-bs-target="#cakeModalTiers" data-bs-toggle="modal"
-                        data-size="large"></button>
+                <p>Step 1</p>
+                <div class="container">
+                    <div class="row justify-content-evenly">
+                        <div class="col-10 col-sm-7 col-md-3 selections justify-content-center"
+                            data-bs-target="#cakeModalSize" data-bs-toggle="modal" data-size="small">
+                            <img src="{% static 'images/square-s.webp' %}" alt="Size of a square">
+                            <p>Small 15cm</p>
+                        </div>
+                        <div class="col-10 col-sm-7 col-md-3 selections" data-bs-target="#cakeModalSize"
+                            data-bs-toggle="modal" data-size="medium">
+                            <img src="{% static 'images/square-m.webp' %}" alt="Size of a rectangle">
+                            <p>Medium 20cm</p>
+                        </div>
+                        <div class="col-10 col-sm-7 col-md-3 selections" data-bs-target="#cakeModalSize"
+                            data-bs-toggle="modal" data-size="large">
+                            <img src="{% static 'images/square-l.webp' %}" alt="Size of cylinder">
+                            <p>Large 25cm</p>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
             </div>
         </div>
     </div>

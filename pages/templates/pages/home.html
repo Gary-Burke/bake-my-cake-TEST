@@ -3,7 +3,38 @@
 
 {% block content %}
 
-<h2>HOME</h2>
+
+<form id="cake-form" class="container mt-3 p-3" action="">
+    <div class="row justify-content-evenly align-items-center">
+
+        <fieldset class="col-2 p-2" id="field-shape">
+            <legend>Shape</legend>
+            <input type="radio" name="shape" id="shape-square" value="square">
+            <label for="shape-square">Square</label><br>
+            <input type="radio" name="shape" id="shape-round" value="round">
+            <label for="shape-round">Round</label><br>
+            <input type="radio" name="shape" id="shape-rectangle" value="rectangle">
+            <label for="shape-rectangle">Rectangle</label>
+        </fieldset>
+
+        <fieldset class="col-2 p-2" id="field-size">
+            <legend>Size</legend>
+            <input type="radio" name="size" id="size-small" value="small">
+            <label for="size-small">Small</label><br>
+            <input type="radio" name="size" id="size-medium" value="medium">
+            <label for="size-medium">Medium</label><br>
+            <input type="radio" name="size" id="size-large" value="large">
+            <label for="size-large">Large</label>
+        </fieldset>
+
+
+
+    </div>
+</form>
 
 
 {% endblock content %}
+
+{% block extras %}
+<script src="{% static 'js/home.js' %}"></script>
+{% endblock %}
