@@ -34,7 +34,7 @@ nav {
 }
 
 #nav-top {
-  min-height: 70px;
+  min-height: 4.5rem;
 }
 
 .nav-link {
@@ -71,7 +71,7 @@ nav {
 }
 
 .logo {
-  height: 40px;
+  height: 4.5rem;
 }
 
 /* Cake Config Modal */
