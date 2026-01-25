@@ -74,6 +74,21 @@ nav {
   height: 4.5rem;
 }
 
+/* Footer */
+
+footer {
+  background-color: var(--secondary-color);
+}
+
+footer i {
+  color: var(--body-text-color);
+  font-size: 1.2rem;
+}
+
+footer a {
+  color: var(--body-text-color);
+}
+
 /* Cake Config Modal */
 
 fieldset {
@@ -91,6 +106,7 @@ legend {
 
 .modal-content {
   color: var(--body-text-color);
+  background-color: var(--primary-text-color);
 }
 
 #cake-form input[type="radio"] {
