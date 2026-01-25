@@ -7,7 +7,7 @@
   --primary-color: #69776e;
   --secondary-color: #c9c1a6;
 
-  --alt-color: #DEE2E6;
+  --alt-color: #A5CFF3;
 
   --highlight-color: #FED8A6;
   --primary-text-color: #FFF9F5;
@@ -87,6 +87,10 @@ legend {
   float: none;
   padding: 0px 0.25rem;
   width: fit-content;
+}
+
+.modal-content {
+  color: var(--body-text-color);
 }
 
 #cake-form input[type="radio"] {
