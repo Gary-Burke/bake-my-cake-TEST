@@ -52,24 +52,6 @@ nav {
   color: var(--highlight-color);
 }
 
-.navbar-nav .nav-link::after {
-  content: "";
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  width: 60%;
-  height: 2px;
-  background-color: var(--highlight-color);
-  transform: translateX(-50%) scaleX(0);
-  transform-origin: center;
-  transition: transform 0.3s ease;
-}
-
-.navbar-nav .nav-item:hover .nav-link::after,
-.navbar-nav .nav-link.active::after {
-  transform: translateX(-50%) scaleX(1);
-}
-
 .logo {
   height: 4.5rem;
 }
@@ -129,5 +111,23 @@ legend {
 @media screen and (min-width: 992px) {
   #field-size {
     padding-bottom: 0.5rem;
+  }
+
+  .navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    width: 60%;
+    height: 2px;
+    background-color: var(--highlight-color);
+    transform: translateX(-50%) scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-nav .nav-item:hover .nav-link::after,
+  .navbar-nav .nav-link.active::after {
+    transform: translateX(-50%) scaleX(1);
   }
 }
